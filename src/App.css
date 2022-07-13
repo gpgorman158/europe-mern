@@ -1,25 +1,45 @@
+@media only screen and (min-width: 1200px) {
+.App{
+  width: 1200px;
+  margin: 0 auto;
+  
+}
 .header{
   display: grid;
-  grid-template-columns: 25% 60% 15%;
+  grid-template-columns: 25% 70% 5%;
   height: 150px;
   justify-content: center;
   align-items: center;
+  background-color: rgb(252, 251, 238);
+  margin: 0 -100rem;
+  /* add back negative margin value */
+  padding: 0 100rem;
 }
 
 img.logo {
-  width: 100%;
-  height: auto;
+  width: auto;
+  margin-left:10px;
+  height: 100px;
   /* margin-top: 10px; */
 }
 
 .home {
   display: grid;
+  height: 650px;
   grid-template-columns: 25% 75%;
 }
-
+.left-menu {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.left-menu h1{
+  border-radius: 15px 15px 0px 0px;
+}
 .list ul {
   padding: 10px;
-  margin: 0px;
+  /* padding-left: 50px; */
+  margin: auto;
+  /* text-align: center; */
   font-size: 20px;
   border-style: solid;
   border-width: 2px;
@@ -30,28 +50,118 @@ h1.topic {
   color: #FBB03B;
   margin: 0px;
   padding: 10px;
+  font-size: 26px;
+  text-align: center;
 }
-.middle-menu {
+.top-mid {
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 50%;
-  margin-left: 20px;
+  grid-template-rows: 6% 20% 74%;
+  grid-template-columns: 100%;
+  margin-top: 10px;
+  font-size: 24px;
+  color:#002856;
+  font-weight: bold;
+}
+.top-mid p.popular{
+  margin-left: 10px;
+  margin-top: 0px;
+}
+
+.middle-container {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  /* justify-content: center; */
+  margin: auto;
+  border-style: solid;
+  border-color:#002856;
+  border-radius: 15px;
+  width: 90%;
+}
+
+.middle-container div {
+  font-size: 20px;
+  color:#002856;
+  font-weight: bold;
+  
+  margin-top: 20px;
+  padding-right: 75px;
+  padding-left: 75px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.middle-container a {
+  transition: box-shadow .3s;
+  transition: background-color .3s;
+  border-right: solid;
+  border-color: #002856;
+}
+.middle-container a:hover {
+  box-shadow: 0 0 12px #002856; 
+}
+
+.middle-container a {
+  color:#002856;
+  text-decoration: none!important;
+}
+div.middle-container a.restaurants {
+  border-right-style:none!important;
+}
+
+
+.middle-menu {
+  
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
   
 }
 .middle-menu div {
   height: 90%;
-  width: 90%;
+  width: 92%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  justify-self: center;
+  
   border-style: solid;
+  border-radius: 15px;
   border-color: #002856;
   background: #002856;
+  overflow: hidden;
+  /* position: relative; */
 }
+
 .middle-menu div a{
   color: #FBB03B;
   font-size: 30px;
   text-decoration: none!important;
+  padding-left: 4px;
+}
+.middle-menu div.middle-menu-links {
+  display: grid;
+  grid-template-rows: 50% 50%;
+}
+.middle-menu div.middle-menu-links a h4{
+  margin: 0px;
+}
+
+.middle-menu div.middle-menu-links a p{
+  color:#FBB03B;
+  font-size: 18px;
+  margin-top: 26px;
+  transition-property: margin-left;
+  transition-duration: 1s;
+  /* position: relative; */
+  /* padding-top: 20%; */
+  /* bottom: 15%; */
+}
+.middle-menu div.middle-menu-links a p:hover{
+  margin-left:10px;
+}
+.middle-menu div img{
+  border-radius: 15px 15px 0px 0px;
+  
 }
 form {
   margin-left: 6em;
@@ -59,21 +169,57 @@ form {
 }
 form input {
   width: 90%;
+  position: relative;
 }
 form button {
-  width: 10%;
+  width: 80px;
   height: 42px;
 }
-form input[type=search] {
+form input[type=text] {
   padding: 6px;
+  padding-left: 16px;
   border: solid;
   border-width: 2px;
   border-radius: 20px;
   border-color: #002856;
   font-size: 22px;
 }
+.btn {
+  position: absolute;
+  margin-left: 529px;
+  z-index: 100;
+  border-radius: 0 20px 20px 0;
+  background-color: #002856;
+  color: #FBB03B;
+  font-size: 22px;
+  cursor: pointer;
+}
 .form-holder{ 
   display: flex;
 }
+.footer{
+  background-color: #002856;
+  margin: 1.5rem -100rem;
+  padding: 0 100rem;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 24% 24% 24% 24%;
+  grid-template-rows: 50% 50%;
+}
+.footer div {
+  margin: auto;
+}
+.footer div p{
+  color:#FBB03B;
+  font-size: 22px;
+  margin: 0px;
+}
+.footer div a{
+  color: white;
+  font-size: 16px;
+}
+.footer div ul{
+  margin: 10px;
+}
 
-
+}

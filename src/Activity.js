@@ -3,16 +3,16 @@ import { Routes, Route, useParams } from 'react-router-dom';
 import TextAd from "./TextAd.js"
 
 
-function SearchResults() {
+function Activity() {
     
-    let { results } = useParams();
+    let { activities } = useParams();
 
   return (
     <div className="results">
-        {/* This is a {results} page */}
-        <TextAd results={results}/>
+        {/* This is a {activities} page */}
+        <TextAd results={activities}/>
     </div>
   );
 }
 
-export default SearchResults;
+export default Activity;

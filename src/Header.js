@@ -18,11 +18,13 @@ function Header (){
             <Link to="/"><img className="logo" src={'../Europe-Logo-main-blue.png'} alt="Europe.com Logo"></img></Link>
             <form onSubmit={onSearch} role="search">
                 <div className="form-holder">
-                    <input onChange={(e) => setSearch(e.target.value)} value={search} id="search" type="search" placeholder="Search destinations..." />
-                    <button type="submit">Go</button> 
+                    <input onChange={(e) => setSearch(e.target.value)} value={search} id="search" type="text" placeholder="Search destinations..." />
+                    <button className="btn" type="submit">
+                        <i className="fa fa-search"></i>
+                    </button> 
                 </div>   
             </form>
-            <div>Right nav placeholder, if anything</div>
+            {/* <div>Right nav placeholder, if anything</div> */}
         </div>
     )
 }
