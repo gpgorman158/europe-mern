@@ -199,7 +199,8 @@ form input[type=text] {
 }
 .footer{
   background-color: #002856;
-  margin: 1.5rem -100rem;
+  margin: 0rem -100rem;
+  margin-top: 1.5rem;
   padding: 0 100rem;
   height: 400px;
   display: grid;

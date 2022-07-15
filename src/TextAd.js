@@ -2,7 +2,7 @@ import React from 'react'
 import { useParams, useLocation, useMatch } from 'react-router-dom';
 
 function TextAd ( {results, city}) {
-    
+
     let pageOptions = {
         "pubId": "partner-pub-1187797442630842", // Make sure this is the correct client ID!
         "query": `${results}`, // Make sure the correct query is placed here!
@@ -13,6 +13,7 @@ function TextAd ( {results, city}) {
     let adblock1 = {
         "container": "afscontainer1"
     }; 
+    // _googCsa('ads', pageOptions, adblock1);
 
   return (
     <div className="text-ad">

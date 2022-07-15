@@ -22,7 +22,7 @@ function Home( {url} ) {
 
 
     <>
-      {url === "http://localhost:3000/" ? <MiddleMenu /> : null }
+      {url === "http://europe.com/" ? <MiddleMenu /> : null }
     </>
   );
 }

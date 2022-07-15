@@ -61,20 +61,6 @@ function Footer() {
                 <Link to ="country/Greece/Thessaloniki"><li>Thessaloniki</li></Link> 
             </ul>
         </div>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
     </div>
   );
 }
