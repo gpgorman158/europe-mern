@@ -10,6 +10,7 @@ import Footer from './Footer';
 import MiddleMenu from './MiddleMenu';
 import SearchResults from './SearchResults.js'
 import Activity from './Activity.js'
+import AdSense from 'react-adsense';
 
 function App() {
   

@@ -16,12 +16,15 @@ function TextAd ( {results, city}) {
     // _googCsa('ads', pageOptions, adblock1);
 
   return (
-    <div className="text-ad">
-        {/* This is a {results} {city ? city : null} text ad page <br></br> */}
-        <div id="afscontainer2">
-            {/* {pageOptions.query} */}Content Coming Soon!
-        </div>
-    </div>
+    <>
+      <div id="afscontainer1"></div>
+      <div className="text-ad">
+          {/* This is a {results} {city ? city : null} text ad page <br></br> */}
+          <div id="afscontainer2">
+              {/* {pageOptions.query} */}Content Coming Soon!
+          </div>
+      </div>
+    </>
   );
 }
 
