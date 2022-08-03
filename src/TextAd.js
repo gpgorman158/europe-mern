@@ -14,7 +14,7 @@ function TextAd ( {results, city}) {
         "container": "afscontainer1"
     }; 
     window._googCsa('ads', pageOptions, adblock1);
-
+    
   return (
     <>
       <div id="afscontainer1"></div>

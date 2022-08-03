@@ -22,7 +22,7 @@ function Home( {url} ) {
 
 
     <>
-      {url === "http://europe.com/" ? <MiddleMenu /> : null }
+      {url === "https://react.europe.com/" ? <MiddleMenu /> : null }
     </>
   );
 }
