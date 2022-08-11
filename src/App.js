@@ -1,15 +1,10 @@
 import React, {useState, useEffect} from 'react'
 import './App.css';
 import Header from './Header.js'
-import {Routes, Route, useLocation, useParams, useNavigate} from "react-router-dom";
-import Home from './Home.js'
-import Country from './Country.js'
+import {useNavigate} from "react-router-dom";
 import LeftMenu from './LeftMenu';
 import TopMid from './TopMid';
 import Footer from './Footer';
-import MiddleMenu from './MiddleMenu';
-import SearchResults from './SearchResults.js'
-import Activity from './Activity.js'
 import AdSense from 'react-adsense';
 
 function App() {
@@ -20,23 +15,22 @@ function App() {
         setUrl(window.location.href)
   }, [url])
 
+  const [search, setSearch] = useState("")
+
+  let navigate = useNavigate();
+
+  function onSearch (search) {
+      setSearch(search)
+      navigate(`search/${search}`)
+  }
+
   return (
     <div className="App">
-      <Header />
+      <Header onSearch={onSearch} />
       <div className="home">
         <LeftMenu />
-        <TopMid url={url} />
+        <TopMid url={url}/>
       </div> 
-      {/* <Routes>
-        <Route exact path="/"></Route>
-        <Route path="/country">
-          <Route path=":country" element={<Country />}>
-            <Route path=":city" element={<Country />}/>
-          </Route>
-        </Route>
-        <Route path="search/:results" element={<SearchResults />}></Route>
-        <Route path="/:activities" element={<Activity />}></Route>
-      </Routes> */}
       <Footer />
     </div>
   );

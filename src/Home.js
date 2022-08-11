@@ -1,11 +1,7 @@
 import React from 'react'
 // import LeftMenu from './LeftMenu.js'
 import MiddleMenu from './MiddleMenu.js'
-import TopMid from './TopMid.js'
-import Footer from './Footer.js'
-import LeftMenu from './LeftMenu';
-import SearchResults from './SearchResults'
-import Header from './Header'
+
 
 function Home( {url} ) {
 
@@ -22,7 +18,7 @@ function Home( {url} ) {
 
 
     <>
-      {url === "https://react.europe.com/" ? <MiddleMenu /> : null }
+      {url === "https://europe.com/" ? <MiddleMenu /> : null }
     </>
   );
 }

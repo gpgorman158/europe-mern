@@ -1,24 +1,22 @@
 import React, {useState} from 'react'
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-function Header (){
-    const [search, setSearch] = useState("")
+function Header ( {onSearch}){
+    const [localSearch, setLocalSearch] = useState("")
 
-    let navigate = useNavigate();
-
-    function onSearch (e){
+    function handleSearch (e){
         e.preventDefault()
-        navigate(`search/${search}`)
-        setSearch("")  
+        onSearch(localSearch)
+        setLocalSearch("")
+        
     }
-
 
     return (
         <div className="header">
             <Link to="/"><img className="logo" src={'../Europe-Logo-main-blue.png'} alt="Europe.com Logo"></img></Link>
-            <form onSubmit={onSearch} role="search">
+            <form onSubmit={handleSearch} role="search">
                 <div className="form-holder">
-                    <input onChange={(e) => setSearch(e.target.value)} value={search} id="search" type="text" placeholder="Search destinations..." />
+                    <input onChange={(e) => setLocalSearch(e.target.value)} value={localSearch} id="search" type="text" placeholder="Search destinations..." />
                     <button className="btn" type="submit">
                         <i className="fa fa-search"></i>
                     </button> 

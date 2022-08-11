@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import { Link } from "react-router-dom";
 
 function LeftMenu() {
-    const [counties, setCountries] = useState(["France","Spain", "Italy", "Turkey", "Germany", "United Kingdom", "Austria", "Greece", "Russia", "Portugal"])
+    const [counties, setCountries] = useState(["France","Spain", "Italy", "Turkey", "Germany", "United Kingdom", "Austria", "Greece", "Netherlands", "Portugal"])
 
     
   return (
